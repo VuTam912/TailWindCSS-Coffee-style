@@ -1,3 +1,4 @@
 # ko đẩy folder or files lên github
 node_modules
-/public/output.css
+public/output.css
+.DS_Store

@@ -3,18 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" sizes="16x16" href="./img/favicon/icons8-coffee-16.png" />
     <title>Coffee Style</title>
     <link href="./output.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="main.js" async></script>
   </head>
   <body>
     <div class="root">
-      <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
-        <header class="py-6 mx-10">
+      <div class="content-wrapper font-karla max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
+        <header class="p-6 mx-auto">
           <nav class="flex flex-row justify-between items-center">
             <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">CoffeeStyle.</div>
-            <ul class="basis-3/6 flex flex-row justify-end gap-8 uppercase text-sm text-gray-500 font-medium">
+            <!-- nếu thiết bị có tỷ lệ lơn hơn 1024 trở lên thì show => lg -->
+            <!-- còn thiết bị nào nhỏ hơn 1024 thì hidden -->
+            <ul
+              id="ct-top-menu"
+              class="basis-2/6 hidden lg:flex lg:flex-row lg:justify-end lg:gap-8 uppercase text-sm text-gray-500 font-medium"
+            >
               <!-- top-menu-item in input.css -->
-              <li class="ct-top-menu-item">
+              <li class="ct-top-menu-item ct-top-menu-item-active">
                 <a href="#" class="">Home</a>
               </li>
               <li class="ct-top-menu-item">
@@ -36,7 +43,9 @@
                 <a href="#" class="">RyoPhamDev</a>
               </li>
             </ul>
-            <ul class="basis-1/6 flex justify-start items-center ml-6 uppercase text-sm text-gray-500 font-medium">
+            <ul
+              class="basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center ml-6 uppercase text-sm text-gray-500 font-medium"
+            >
               <li class="ct-top-menu-item">
                 <a href="#" class="flex items-center">
                   <svg
@@ -60,6 +69,20 @@
                 </a>
               </li>
             </ul>
+            <!-- will show if is device >= 1024 -->
+            <div class="basis-1/6 lg:hidden flex items-center cursor-pointer px-3 sm:px-8">
+              <svg
+                id="ct-toggle-top-menu-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="ct-icon w-6 h-6"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </div>
           </nav>
         </header>
         <main>
