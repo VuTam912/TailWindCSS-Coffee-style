@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="root">
-      <div class="content-wrapper font-karla max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
+      <div class="content-wrapper font-karla max-w-screen-2xl text-base mx-auto px-8">
         <header class="p-6 mx-auto">
           <nav class="flex flex-row justify-between items-center">
             <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">CoffeeStyle.</div>
@@ -86,7 +86,25 @@
           </nav>
         </header>
         <main>
-          <div class="slider">Slider</div>
+          <!-- bg-[..] or use  bg-slider-bg was define in file tailwinds config -->
+          <div class="slider h-[530px] bg-[url('./img/slider-bg.jpeg')] bg-cover bg-bottom bg-no-repeat">
+            <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-30">
+              <div class="mx-16 text-white text-center">
+                <div class="uppercase mb-6">Best place to buy coffee</div>
+                <div class="font-medium text-5xl mb-6">Coffee Mugs</div>
+                <div class="font-medium text-lg mb-6">
+                  The most versatile furniture system ever created. Designed to fit your life, made to move and grow.
+                </div>
+                <div class="flex justify-center">
+                  <div
+                    class="uppercase bg-white text-gray-900 w-max tracking-wide px-6 py-4 text-xs font-semibold cursor-pointer hover:opacity-95"
+                  >
+                    Explore Our Products
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- End slider -->
           <div class="story">Story</div>
           <!-- End story -->
