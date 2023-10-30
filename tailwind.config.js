@@ -6,8 +6,14 @@ module.exports = {
       fontFamily: {
         karla: ["Karla", "sans-serif"],
       },
+      // đinh nghĩa các thuộc tính css và cho phép tái sử dụng nhiều lầnc
       colors: {
-        "light-coffee": "#C89F94",
+        coffee: {
+          50: "#E8D6D8",
+          200: "#C89F94",
+          400: "#A25F48",
+          600: "#744838",
+        },
       },
       keyframes: {
         slideDown: {

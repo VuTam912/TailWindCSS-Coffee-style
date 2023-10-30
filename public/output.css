@@ -536,6 +536,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.relative{
+  position: relative;
+}
+
 .mx-16{
   margin-left: 4rem;
   margin-right: 4rem;
@@ -549,6 +553,10 @@ video {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 
 .mb-6{
@@ -688,29 +696,24 @@ video {
   padding-right: 0.75rem;
 }
 
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-32{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .py-4{
@@ -724,6 +727,11 @@ video {
 
 .font-karla{
   font-family: Karla, sans-serif;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-5xl{
@@ -768,8 +776,21 @@ video {
   text-transform: uppercase;
 }
 
+.leading-10{
+  line-height: 2.5rem;
+}
+
+.leading-7{
+  line-height: 1.75rem;
+}
+
 .tracking-wide{
   letter-spacing: 0.025em;
+}
+
+.text-coffee-200{
+  --tw-text-opacity: 1;
+  color: rgb(200 159 148 / var(--tw-text-opacity));
 }
 
 .text-gray-500{
@@ -777,14 +798,14 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-gray-900{
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /* ct = custom css */
@@ -874,22 +895,113 @@ video {
   line-height: 1rem;
 }
 
-.hover\:opacity-50:hover{
-  opacity: 0.5;
+/* text-[] : font-size: */
+
+.ct-subheadline{
+  margin-bottom: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hover\:opacity-90:hover{
-  opacity: 0.9;
+.ct-subheadline-deco-line{
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  height: 1px;
+  width: 2rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.ct-subheadline-deco-label{
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.after\:absolute::after{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:-bottom-2::after{
+  content: var(--tw-content);
+  bottom: -0.5rem;
+}
+
+.after\:left-0::after{
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.after\:h-0::after{
+  content: var(--tw-content);
+  height: 0px;
+}
+
+.after\:h-0\.5::after{
+  content: var(--tw-content);
+  height: 0.125rem;
+}
+
+.after\:w-full::after{
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.after\:bg-coffee-50::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 214 216 / var(--tw-bg-opacity));
+}
+
+.after\:transition-all::after{
+  content: var(--tw-content);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.after\:ease-in-out::after{
+  content: var(--tw-content);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:text-coffee-600:hover{
+  --tw-text-opacity: 1;
+  color: rgb(116 72 56 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-95:hover{
   opacity: 0.95;
 }
 
+.hover\:after\:bg-coffee-200:hover::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(200 159 148 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 640px){
+  .sm\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .sm\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 
@@ -920,5 +1032,17 @@ video {
 
   .lg\:gap-8{
     gap: 2rem;
+  }
+
+  .lg\:px-64{
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:px-96{
+    padding-left: 24rem;
+    padding-right: 24rem;
   }
 }
