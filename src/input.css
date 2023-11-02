@@ -6,6 +6,7 @@
 @tailwind utilities;
 
 /* ct = custom css */
+/* cho tái sử dụng nhiều lần  */
 
 /* handle js add class for navbar - sm >= */
 .ct-topmenu-expanded {
@@ -41,5 +42,10 @@
 }
 
 .ct-subheadline-deco-label {
-  @apply uppercase tracking-widest text-gray-500 font-medium text-[12px] text-center;
+  @apply uppercase tracking-widest text-gray-500 font-medium text-xs text-center;
+}
+
+/* css button  */
+.ct-button {
+  @apply uppercase tracking-wide px-8 py-4 text-center text-[13px] font-semibold cursor-pointer hover:opacity-90;
 }
