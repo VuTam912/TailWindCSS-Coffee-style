@@ -2,7 +2,7 @@
 
 /* font google */
 
-/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -575,6 +575,16 @@ video {
   margin-right: auto;
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .mb-24{
   margin-bottom: 6rem;
 }
@@ -597,6 +607,10 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
 }
 
 .flex{
@@ -625,6 +639,10 @@ video {
 
 .h-full{
   height: 100%;
+}
+
+.h-\[380px\]{
+  height: 380px;
 }
 
 .w-11\/12{
@@ -746,6 +764,58 @@ video {
 
 .bg-slider-bg{
   background-image: url('./img/slider-bg.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/featured-mug-03\.jpg\'\)\]{
+  background-image: url('./img/featured-mug-03.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/featured-mug-04\.jpg\'\)\]{
+  background-image: url('./img/featured-mug-04.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/featured-mug-05\.jpg\'\)\]{
+  background-image: url('./img/featured-mug-05.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/featured-mug-06\.jpg\'\)\]{
+  background-image: url('./img/featured-mug-06.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/product-coffee-01\.jpeg\'\)\]{
+  background-image: url('./img/product-coffee-01.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/product-coffee-02\.jpeg\'\)\]{
+  background-image: url('./img/product-coffee-02.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/product-coffee-03\.jpeg\'\)\]{
+  background-image: url('./img/product-coffee-03.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/product-coffee-04\.jpeg\'\)\]{
+  background-image: url('./img/product-coffee-04.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/product-coffee-05\.jpeg\'\)\]{
+  background-image: url('./img/product-coffee-05.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/product-coffee-06\.jpeg\'\)\]{
+  background-image: url('./img/product-coffee-06.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/product-coffee-07\.jpeg\'\)\]{
+  background-image: url('./img/product-coffee-07.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/product-coffee-08\.jpeg\'\)\]{
+  background-image: url('./img/product-coffee-08.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/product-coffee-09\.jpeg\'\)\]{
+  background-image: url('./img/product-coffee-09.jpeg');
 }
 
 .bg-cover{
@@ -1140,6 +1210,14 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:gap-4{
+    gap: 1rem;
+  }
+
   .md\:px-32{
     padding-left: 8rem;
     padding-right: 8rem;
@@ -1165,6 +1243,10 @@ video {
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
