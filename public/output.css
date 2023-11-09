@@ -560,6 +560,10 @@ video {
   top: 0.75rem;
 }
 
+.left-\[calc\(-50vw\+50\%\)\]{
+  left: calc(-50vw + 50%);
+}
+
 .mx-16{
   margin-left: 4rem;
   margin-right: 4rem;
@@ -580,6 +584,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.-mx-px{
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
 .mb-16{
   margin-bottom: 4rem;
 }
@@ -596,10 +605,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-5{
-  margin-bottom: 1.25rem;
-}
-
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -614,6 +619,10 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.-ml-px{
+  margin-left: -1px;
 }
 
 .flex{
@@ -656,6 +665,14 @@ video {
   height: 100%;
 }
 
+.h-\[340px\]{
+  height: 340px;
+}
+
+.h-\[1000px\]{
+  height: 1000px;
+}
+
 .w-11\/12{
   width: 91.666667%;
 }
@@ -679,6 +696,14 @@ video {
 .w-max{
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-\[100\%\]{
+  width: 100%;
+}
+
+.w-\[100vw\]{
+  width: 100vw;
 }
 
 .max-w-screen-2xl{
@@ -750,20 +775,16 @@ video {
   justify-content: space-between;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .gap-5{
   gap: 1.25rem;
 }
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-3{
-  gap: 0.75rem;
-}
-
-.gap-2{
-  gap: 0.5rem;
 }
 
 .bg-\[\.\.\]{
@@ -853,8 +874,16 @@ video {
   background-image: url('./img/slider-bg.jpeg');
 }
 
+.bg-\[url\(\'\.\/img\/bg-parallax-01\.jpeg\'\)\]{
+  background-image: url('./img/bg-parallax-01.jpeg');
+}
+
 .bg-cover{
   background-size: cover;
+}
+
+.bg-fixed{
+  background-attachment: fixed;
 }
 
 .bg-bottom{
