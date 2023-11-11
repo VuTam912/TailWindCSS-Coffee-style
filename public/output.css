@@ -552,16 +552,16 @@ video {
   left: 50%;
 }
 
+.left-\[calc\(-50vw\+50\%\)\]{
+  left: calc(-50vw + 50%);
+}
+
 .right-3{
   right: 0.75rem;
 }
 
 .top-3{
   top: 0.75rem;
-}
-
-.left-\[calc\(-50vw\+50\%\)\]{
-  left: calc(-50vw + 50%);
 }
 
 .mx-16{
@@ -584,9 +584,9 @@ video {
   margin-bottom: 2rem;
 }
 
-.-mx-px{
-  margin-left: -1px;
-  margin-right: -1px;
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-16{
@@ -621,10 +621,6 @@ video {
   margin-top: 2rem;
 }
 
-.-ml-px{
-  margin-left: -1px;
-}
-
 .flex{
   display: flex;
 }
@@ -649,6 +645,10 @@ video {
   height: 280px;
 }
 
+.h-\[340px\]{
+  height: 340px;
+}
+
 .h-\[380px\]{
   height: 380px;
 }
@@ -665,12 +665,8 @@ video {
   height: 100%;
 }
 
-.h-\[340px\]{
-  height: 340px;
-}
-
-.h-\[1000px\]{
-  height: 1000px;
+.h-\[500px\]{
+  height: 500px;
 }
 
 .w-11\/12{
@@ -685,6 +681,10 @@ video {
   width: 100px;
 }
 
+.w-\[100vw\]{
+  width: 100vw;
+}
+
 .w-\[95\%\]{
   width: 95%;
 }
@@ -696,14 +696,6 @@ video {
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[100\%\]{
-  width: 100%;
-}
-
-.w-\[100vw\]{
-  width: 100vw;
 }
 
 .max-w-screen-2xl{
@@ -806,8 +798,17 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-slate-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-30{
   --tw-bg-opacity: 0.3;
+}
+
+.bg-\[url\(\'\.\/img\/bg-parallax-01\.jpeg\'\)\]{
+  background-image: url('./img/bg-parallax-01.jpeg');
 }
 
 .bg-\[url\(\'\.\/img\/featured-mug-01\.jpg\'\)\]{
@@ -816,6 +817,10 @@ video {
 
 .bg-\[url\(\'\.\/img\/featured-mug-02\.jpg\'\)\]{
   background-image: url('./img/featured-mug-02.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/lifestyle-story-01\.jpeg\'\)\]{
+  background-image: url('./img/lifestyle-story-01.jpeg');
 }
 
 .bg-\[url\(\'\.\/img\/magazine-image-01\.jpeg\'\)\]{
@@ -874,8 +879,12 @@ video {
   background-image: url('./img/slider-bg.jpeg');
 }
 
-.bg-\[url\(\'\.\/img\/bg-parallax-01\.jpeg\'\)\]{
-  background-image: url('./img/bg-parallax-01.jpeg');
+.bg-\[url\(\'\.\/img\/lifestyle-story-02\.jpeg\'\)\]{
+  background-image: url('./img/lifestyle-story-02.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/lifestyle-story-03\.jpeg\'\)\]{
+  background-image: url('./img/lifestyle-story-03.jpeg');
 }
 
 .bg-cover{
@@ -931,6 +940,10 @@ video {
   padding-left: 2rem;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -979,6 +992,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[13px\]{
+  font-size: 13px;
+}
+
 .font-medium{
   font-weight: 500;
 }
@@ -999,8 +1016,24 @@ video {
   line-height: 1.75rem;
 }
 
+.leading-5{
+  line-height: 1.25rem;
+}
+
 .tracking-widest{
   letter-spacing: 0.1em;
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+
+.tracking-\[2\]{
+  letter-spacing: 2;
+}
+
+.tracking-\[5\]{
+  letter-spacing: 5;
 }
 
 .text-coffee-200{
@@ -1031,6 +1064,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-600{
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .line-through{
@@ -1173,7 +1211,7 @@ video {
 }
 
 .ct-button:hover{
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .after\:absolute::after{

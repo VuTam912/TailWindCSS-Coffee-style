@@ -47,5 +47,5 @@
 
 /* css button  */
 .ct-button {
-  @apply uppercase tracking-wide px-8 py-4 text-center text-[13px] font-semibold cursor-pointer hover:opacity-90;
+  @apply uppercase tracking-wide px-8 py-4 text-center text-[13px] font-semibold cursor-pointer hover:opacity-95;
 }
