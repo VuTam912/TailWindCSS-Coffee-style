@@ -598,10 +598,6 @@ video {
   margin-bottom: 4rem;
 }
 
-.mb-20{
-  margin-bottom: 5rem;
-}
-
 .mb-24{
   margin-bottom: 6rem;
 }
@@ -618,6 +614,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -628,10 +628,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mb-8{
-  margin-bottom: 2rem;
 }
 
 .flex{
@@ -658,16 +654,16 @@ video {
   height: 280px;
 }
 
-.h-\[340px\]{
-  height: 340px;
-}
-
 .h-\[350px\]{
   height: 350px;
 }
 
 .h-\[380px\]{
   height: 380px;
+}
+
+.h-\[400px\]{
+  height: 400px;
 }
 
 .h-\[440px\]{
@@ -686,8 +682,16 @@ video {
   height: 1px;
 }
 
+.h-\[370px\]{
+  height: 370px;
+}
+
 .max-h-\[53px\]{
   max-height: 53px;
+}
+
+.min-h-\[370px\]{
+  min-height: 370px;
 }
 
 .w-11\/12{
@@ -800,6 +804,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-12{
+  gap: 3rem;
+}
+
 .gap-3{
   gap: 0.75rem;
 }
@@ -812,12 +820,8 @@ video {
   gap: 2rem;
 }
 
-.gap-2{
-  gap: 0.5rem;
-}
-
-.gap-12{
-  gap: 3rem;
+.gap-4{
+  gap: 1rem;
 }
 
 .border-\[1px\]{
@@ -966,6 +970,11 @@ video {
   background-repeat: no-repeat;
 }
 
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-6{
   padding: 1.5rem;
 }
@@ -1044,6 +1053,10 @@ video {
   font-size: 13px;
 }
 
+.text-\[22px\]{
+  font-size: 22px;
+}
+
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1067,15 +1080,6 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-\[22px\]{
-  font-size: 22px;
 }
 
 .font-bold{
@@ -1106,12 +1110,12 @@ video {
   line-height: 1.75rem;
 }
 
-.tracking-widest{
-  letter-spacing: 0.1em;
-}
-
 .tracking-wider{
   letter-spacing: 0.05em;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
 }
 
 .text-coffee-200{
@@ -1471,10 +1475,6 @@ video {
     height: 540px;
   }
 
-  .sm\:flex-row{
-    flex-direction: row;
-  }
-
   .sm\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
@@ -1506,6 +1506,10 @@ video {
 
   .md\:h-\[130px\]{
     height: 130px;
+  }
+
+  .md\:h-\[500px\]{
+    height: 500px;
   }
 
   .md\:grid-cols-2{
@@ -1586,6 +1590,18 @@ video {
   .lg\:px-64{
     padding-left: 16rem;
     padding-right: 16rem;
+  }
+
+  .lg\:pl-8{
+    padding-left: 2rem;
+  }
+
+  .lg\:text-left{
+    text-align: left;
+  }
+
+  .lg\:text-center{
+    text-align: center;
   }
 }
 

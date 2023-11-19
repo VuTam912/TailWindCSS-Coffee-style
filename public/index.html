@@ -87,7 +87,7 @@
         </header>
         <main>
           <!-- bg-[..] or use  bg-slider-bg was define in file tailwinds config -->
-          <div class="slider h-[530px] bg-[url('./img/slider-bg.jpeg')] bg-cover bg-bottom bg-no-repeat">
+          <div class="slider h-[530px] bg-[url('./img/slider-bg.jpeg')] bg-cover bg-bottom bg-no-repeat mb-24">
             <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-30">
               <div class="mx-16 text-white text-center">
                 <div class="uppercase mb-6">Best place to buy coffee</div>
@@ -101,10 +101,23 @@
               </div>
             </div>
           </div>
+
+          <div class="ct-subheadline">
+            <!-- ct = customize css in input.css -->
+            <div class="ct-subheadline-deco-line"></div>
+            <div class="ct-subheadline-deco-label">Our coffee story</div>
+            <div class="ct-subheadline-deco-line"></div>
+          </div>
+
           <!-- End slider -->
-          <div class="story flex justify-between items-center">
+          <div class="story flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-4 w-[95%] lg:w-[65%] mx-auto mb-24">
             <!-- man hinh tu be px (default) -> xl den to -->
-            <div class="px-4 sm:px-16 md:px-32 lg:px-64 xl:px-96 py-32 text-center">
+            <div class="basis-1/2">
+              <video autoplay loop muted class="w-full h-full object-cover min-h-[370px]">
+                <source src="./video/coffee-video.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="basis-1/2 text-center lg:text-left lg:pl-8">
               <div class="text-3xl leading-10 mb-3">What is your most special coffee?</div>
               <div class="text-gray-500 leading-7 mb-6">
                 The French Press is a brewing method that comes closest to cupping. Cupping is the prescribed method by
@@ -473,7 +486,7 @@
           <!-- End coffee-magazine -->
 
           <div
-            class="ct-parallax-section bg-[url('./img/bg-parallax-01.jpeg')] bg-cover bg-no-repeat bg-center h-[340px] mb-24 bg-fixed w-[100vw] relative left-[calc(-50vw+50%)]"
+            class="ct-parallax-section bg-[url('./img/bg-parallax-01.jpeg')] bg-cover bg-no-repeat bg-center h-[400px] md:h-[500px] mb-24 bg-fixed w-[100vw] relative left-[calc(-50vw+50%)]"
           ></div>
           <!-- End parallax-section -->
 
